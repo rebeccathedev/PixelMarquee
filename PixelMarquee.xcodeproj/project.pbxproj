@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		/* PixelMarquee Framework Sources */
+		F1000001 /* PixelMarquee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000001 /* PixelMarquee.swift */; };
+		F1000002 /* LEDColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000002 /* LEDColor.swift */; };
+		F1000003 /* MarqueeEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000003 /* MarqueeEffect.swift */; };
+		F1000004 /* MatrixConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000004 /* MatrixConfiguration.swift */; };
+		F1000005 /* PixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000005 /* PixelBuffer.swift */; };
+		F1000006 /* PixelFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000006 /* PixelFont.swift */; };
+		F1000007 /* PixelGlyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000007 /* PixelGlyph.swift */; };
+		F1000008 /* DefaultFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000008 /* DefaultFont.swift */; };
+		F1000009 /* MarqueeAnimationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000009 /* MarqueeAnimationState.swift */; };
+		F1000010 /* LEDMatrixCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000010 /* LEDMatrixCanvas.swift */; };
+		F1000011 /* PixelMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000011 /* PixelMarqueeView.swift */; };
+		F1000012 /* PixelMarqueeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000012 /* PixelMarqueeUIView.swift */; };
+		F1000013 /* PixelMarqueeNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000013 /* PixelMarqueeNSView.swift */; };
+		F1000014 /* ColorPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000014 /* ColorPattern.swift */; };
+		
+		/* PixelMarqueeDemo Sources */
+		F1100001 /* PixelMarqueeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2100001 /* PixelMarqueeDemoApp.swift */; };
+		F1100002 /* PixelMarquee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3000001 /* PixelMarquee.framework */; };
+		F1100003 /* PixelMarquee.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3000001 /* PixelMarquee.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		
+		/* PixelMarqueeTests Sources */
+		F1200001 /* PixelBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2200001 /* PixelBufferTests.swift */; };
+		F1200002 /* PixelFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2200002 /* PixelFontTests.swift */; };
+		F1200003 /* LEDColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2200003 /* LEDColorTests.swift */; };
+		F1200004 /* PixelMarquee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3000001 /* PixelMarquee.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6000001;
+			remoteInfo = PixelMarquee;
+		};
+		F4000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6000001;
+			remoteInfo = PixelMarquee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7000001 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1100003 /* PixelMarquee.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		/* Framework Sources */
+		F2000001 /* PixelMarquee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMarquee.swift; sourceTree = "<group>"; };
+		F2000002 /* LEDColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDColor.swift; sourceTree = "<group>"; };
+		F2000003 /* MarqueeEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeEffect.swift; sourceTree = "<group>"; };
+		F2000004 /* MatrixConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixConfiguration.swift; sourceTree = "<group>"; };
+		F2000005 /* PixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelBuffer.swift; sourceTree = "<group>"; };
+		F2000006 /* PixelFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelFont.swift; sourceTree = "<group>"; };
+		F2000007 /* PixelGlyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelGlyph.swift; sourceTree = "<group>"; };
+		F2000008 /* DefaultFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFont.swift; sourceTree = "<group>"; };
+		F2000009 /* MarqueeAnimationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeAnimationState.swift; sourceTree = "<group>"; };
+		F2000010 /* LEDMatrixCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDMatrixCanvas.swift; sourceTree = "<group>"; };
+		F2000011 /* PixelMarqueeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMarqueeView.swift; sourceTree = "<group>"; };
+		F2000012 /* PixelMarqueeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMarqueeUIView.swift; sourceTree = "<group>"; };
+		F2000013 /* PixelMarqueeNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMarqueeNSView.swift; sourceTree = "<group>"; };
+		F2000014 /* ColorPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPattern.swift; sourceTree = "<group>"; };
+		
+		/* Demo App Sources */
+		F2100001 /* PixelMarqueeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMarqueeDemoApp.swift; sourceTree = "<group>"; };
+		
+		/* Test Sources */
+		F2200001 /* PixelBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelBufferTests.swift; sourceTree = "<group>"; };
+		F2200002 /* PixelFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelFontTests.swift; sourceTree = "<group>"; };
+		F2200003 /* LEDColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDColorTests.swift; sourceTree = "<group>"; };
+		
+		/* Products */
+		F3000001 /* PixelMarquee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PixelMarquee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3000002 /* PixelMarqueeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelMarqueeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3000003 /* PixelMarqueeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelMarqueeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8000001 /* Frameworks - PixelMarquee */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8000002 /* Frameworks - PixelMarqueeDemo */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1100002 /* PixelMarquee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8000003 /* Frameworks - PixelMarqueeTests */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1200004 /* PixelMarquee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9000001 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F9000002 /* Sources */,
+				F9000010 /* PixelMarqueeDemo */,
+				F9000011 /* Tests */,
+				F9000020 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F9000003 /* PixelMarquee */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F9000003 /* PixelMarquee */ = {
+			isa = PBXGroup;
+			children = (
+				F2000001 /* PixelMarquee.swift */,
+				F9000004 /* Models */,
+				F9000005 /* Fonts */,
+				F9000006 /* Animation */,
+				F9000007 /* Views */,
+				F9000008 /* Platform */,
+			);
+			path = PixelMarquee;
+			sourceTree = "<group>";
+		};
+		F9000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2000002 /* LEDColor.swift */,
+				F2000003 /* MarqueeEffect.swift */,
+				F2000004 /* MatrixConfiguration.swift */,
+				F2000005 /* PixelBuffer.swift */,
+				F2000014 /* ColorPattern.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9000005 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F2000006 /* PixelFont.swift */,
+				F2000007 /* PixelGlyph.swift */,
+				F2000008 /* DefaultFont.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F9000006 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F2000009 /* MarqueeAnimationState.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		F9000007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000010 /* LEDMatrixCanvas.swift */,
+				F2000011 /* PixelMarqueeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F9000008 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				F2000012 /* PixelMarqueeUIView.swift */,
+				F2000013 /* PixelMarqueeNSView.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		F9000010 /* PixelMarqueeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F2100001 /* PixelMarqueeDemoApp.swift */,
+			);
+			path = PixelMarqueeDemo;
+			sourceTree = "<group>";
+		};
+		F9000011 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F9000012 /* PixelMarqueeTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F9000012 /* PixelMarqueeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2200001 /* PixelBufferTests.swift */,
+				F2200002 /* PixelFontTests.swift */,
+				F2200003 /* LEDColorTests.swift */,
+			);
+			path = PixelMarqueeTests;
+			sourceTree = "<group>";
+		};
+		F9000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3000001 /* PixelMarquee.framework */,
+				F3000002 /* PixelMarqueeDemo.app */,
+				F3000003 /* PixelMarqueeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA000001 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F6000001 /* PixelMarquee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB000001 /* Build configuration list for PBXNativeTarget "PixelMarquee" */;
+			buildPhases = (
+				FA000001 /* Headers */,
+				FC000001 /* Sources */,
+				F8000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelMarquee;
+			productName = PixelMarquee;
+			productReference = F3000001 /* PixelMarquee.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6000002 /* PixelMarqueeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB000002 /* Build configuration list for PBXNativeTarget "PixelMarqueeDemo" */;
+			buildPhases = (
+				FC000002 /* Sources */,
+				F8000002 /* Frameworks */,
+				F7000001 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD000001 /* PBXTargetDependency */,
+			);
+			name = PixelMarqueeDemo;
+			productName = PixelMarqueeDemo;
+			productReference = F3000002 /* PixelMarqueeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6000003 /* PixelMarqueeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB000003 /* Build configuration list for PBXNativeTarget "PixelMarqueeTests" */;
+			buildPhases = (
+				FC000003 /* Sources */,
+				F8000003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD000002 /* PBXTargetDependency */,
+			);
+			name = PixelMarqueeTests;
+			productName = PixelMarqueeTests;
+			productReference = F3000003 /* PixelMarqueeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F6000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					F6000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					F6000003 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = FB000010 /* Build configuration list for PBXProject "PixelMarquee" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9000001 /* Root */;
+			productRefGroup = F9000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6000001 /* PixelMarquee */,
+				F6000002 /* PixelMarqueeDemo */,
+				F6000003 /* PixelMarqueeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC000001 /* Sources - PixelMarquee */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1000001 /* PixelMarquee.swift in Sources */,
+				F1000002 /* LEDColor.swift in Sources */,
+				F1000003 /* MarqueeEffect.swift in Sources */,
+				F1000004 /* MatrixConfiguration.swift in Sources */,
+				F1000005 /* PixelBuffer.swift in Sources */,
+				F1000006 /* PixelFont.swift in Sources */,
+				F1000007 /* PixelGlyph.swift in Sources */,
+				F1000008 /* DefaultFont.swift in Sources */,
+				F1000009 /* MarqueeAnimationState.swift in Sources */,
+				F1000010 /* LEDMatrixCanvas.swift in Sources */,
+				F1000011 /* PixelMarqueeView.swift in Sources */,
+				F1000012 /* PixelMarqueeUIView.swift in Sources */,
+				F1000013 /* PixelMarqueeNSView.swift in Sources */,
+				F1000014 /* ColorPattern.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC000002 /* Sources - PixelMarqueeDemo */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1100001 /* PixelMarqueeDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC000003 /* Sources - PixelMarqueeTests */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1200001 /* PixelBufferTests.swift in Sources */,
+				F1200002 /* PixelFontTests.swift in Sources */,
+				F1200003 /* LEDColorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6000001 /* PixelMarquee */;
+			targetProxy = F4000001 /* PBXContainerItemProxy */;
+		};
+		FD000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6000001 /* PixelMarquee */;
+			targetProxy = F4000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		/* Project-level Debug */
+		FE000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		/* Project-level Release */
+		FE000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		/* PixelMarquee Framework Debug */
+		FE000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PixelMarquee;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		/* PixelMarquee Framework Release */
+		FE000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PixelMarquee;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		/* PixelMarqueeDemo Debug */
+		FE000020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PixelMarqueeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		/* PixelMarqueeDemo Release */
+		FE000021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PixelMarqueeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		/* PixelMarqueeTests Debug */
+		FE000030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PixelMarqueeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		/* PixelMarqueeTests Release */
+		FE000031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PixelMarqueeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB000001 /* Build configuration list for PBXNativeTarget "PixelMarquee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE000010 /* Debug */,
+				FE000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB000002 /* Build configuration list for PBXNativeTarget "PixelMarqueeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE000020 /* Debug */,
+				FE000021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB000003 /* Build configuration list for PBXNativeTarget "PixelMarqueeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE000030 /* Debug */,
+				FE000031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB000010 /* Build configuration list for PBXProject "PixelMarquee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE000001 /* Debug */,
+				FE000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5000001 /* Project object */;
+}
