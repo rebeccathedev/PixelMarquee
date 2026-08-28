@@ -22,6 +22,7 @@
 		F1000012 /* PixelMarqueeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000012 /* PixelMarqueeUIView.swift */; };
 		F1000013 /* PixelMarqueeNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000013 /* PixelMarqueeNSView.swift */; };
 		F1000014 /* ColorPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000014 /* ColorPattern.swift */; };
+		F1000015 /* PixelMarqueeClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000015 /* PixelMarqueeClockView.swift */; };
 		
 		/* PixelMarqueeDemo Sources */
 		F1100001 /* PixelMarqueeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2100001 /* PixelMarqueeDemoApp.swift */; };
@@ -32,6 +33,7 @@
 		F1200001 /* PixelBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2200001 /* PixelBufferTests.swift */; };
 		F1200002 /* PixelFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2200002 /* PixelFontTests.swift */; };
 		F1200003 /* LEDColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2200003 /* LEDColorTests.swift */; };
+		F1200005 /* PixelClockFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2200004 /* PixelClockFormatTests.swift */; };
 		F1200004 /* PixelMarquee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3000001 /* PixelMarquee.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,7 @@
 		F2000012 /* PixelMarqueeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMarqueeUIView.swift; sourceTree = "<group>"; };
 		F2000013 /* PixelMarqueeNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMarqueeNSView.swift; sourceTree = "<group>"; };
 		F2000014 /* ColorPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPattern.swift; sourceTree = "<group>"; };
+		F2000015 /* PixelMarqueeClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMarqueeClockView.swift; sourceTree = "<group>"; };
 		
 		/* Demo App Sources */
 		F2100001 /* PixelMarqueeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMarqueeDemoApp.swift; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		F2200001 /* PixelBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelBufferTests.swift; sourceTree = "<group>"; };
 		F2200002 /* PixelFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelFontTests.swift; sourceTree = "<group>"; };
 		F2200003 /* LEDColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDColorTests.swift; sourceTree = "<group>"; };
+		F2200004 /* PixelClockFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelClockFormatTests.swift; sourceTree = "<group>"; };
 		
 		/* Products */
 		F3000001 /* PixelMarquee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PixelMarquee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +194,7 @@
 			children = (
 				F2000010 /* LEDMatrixCanvas.swift */,
 				F2000011 /* PixelMarqueeView.swift */,
+				F2000015 /* PixelMarqueeClockView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				F2200001 /* PixelBufferTests.swift */,
 				F2200002 /* PixelFontTests.swift */,
 				F2200003 /* LEDColorTests.swift */,
+				F2200004 /* PixelClockFormatTests.swift */,
 			);
 			path = PixelMarqueeTests;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 				F1000012 /* PixelMarqueeUIView.swift in Sources */,
 				F1000013 /* PixelMarqueeNSView.swift in Sources */,
 				F1000014 /* ColorPattern.swift in Sources */,
+				F1000015 /* PixelMarqueeClockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +389,7 @@
 				F1200001 /* PixelBufferTests.swift in Sources */,
 				F1200002 /* PixelFontTests.swift in Sources */,
 				F1200003 /* LEDColorTests.swift in Sources */,
+				F1200005 /* PixelClockFormatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,6 +26,10 @@ struct ContentView: View {
                 NavigationLink("Scrolling Demos") {
                     ScrollingDemosView()
                 }
+
+                NavigationLink("Clock") {
+                    ClockDemoView()
+                }
                 
                 NavigationLink("Color Showcase") {
                     ColorShowcaseView()
@@ -45,6 +49,37 @@ struct ContentView: View {
             }
             .navigationTitle("PixelMarquee Demo")
         }
+    }
+}
+
+// MARK: - Clock
+
+struct ClockDemoView: View {
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 32) {
+                DemoCard(title: "12-Hour Clock") {
+                    PixelMarqueeClockView(format: .twelveHourWithSeconds)
+                        .ledColor(.amber)
+                        .frame(height: 90)
+                }
+
+                DemoCard(title: "24-Hour Clock") {
+                    PixelMarqueeClockView(format: .twentyFourHourWithSeconds)
+                        .ledColor(.cyan)
+                        .frame(height: 90)
+                }
+
+                DemoCard(title: "Rainbow Clock") {
+                    PixelMarqueeClockView(format: .twentyFourHour)
+                        .colorPattern(.rainbow)
+                        .frame(height: 90)
+                }
+            }
+            .padding()
+        }
+        .navigationTitle("Clock")
+        .background(Color.black.opacity(0.9))
     }
 }
 

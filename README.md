@@ -18,6 +18,7 @@ A Swift library for simulating classic LED matrix sign displays with authentic c
 - 🎨 **Full RGB Support** - Classic presets (red, green, amber) plus custom RGB colors
 - 📜 **Smooth Scrolling** - Horizontal and vertical scrolling with configurable speed
 - ⚡ **Blink Effects** - Attention-grabbing blinking animations
+- 🕐 **Live Clock** - 12- or 24-hour time with optional seconds and time-zone support
 - 🔤 **Built-in Font** - Complete 5×7 pixel font covering ASCII 32-126
 - 🎯 **Custom Fonts** - Create and use your own pixel fonts
 - 📱 **Cross-Platform** - SwiftUI, UIKit, and AppKit support
@@ -90,6 +91,16 @@ PixelMarqueeView("ALERT!")
     .ledColor(.red)
     .effect(.blink(interval: 0.5))
 ```
+
+### Live Clock
+
+```swift
+PixelMarqueeClockView(format: .twentyFourHourWithSeconds)
+    .ledColor(.cyan)
+    .frame(height: 100)
+```
+
+Choose from `.twelveHour`, `.twelveHourWithSeconds`, `.twentyFourHour`, or `.twentyFourHourWithSeconds`. Pass a `TimeZone` to display another location's local time.
 
 ### Custom Colors
 
