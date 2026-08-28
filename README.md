@@ -6,6 +6,12 @@ A Swift library for simulating classic LED matrix sign displays with authentic c
 ![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+<p align="center">
+  <img src="docs/images/pride-flags.jpg" alt="PixelMarquee rendering Pride flag color patterns in the macOS demo" width="760">
+</p>
+
+<p align="center"><em>Authentic LED matrices with static, animated, and multi-color displays.</em></p>
+
 ## Features
 
 - 🔴 **Authentic LED Look** - Circular LEDs with visible gaps, just like real matrix displays
@@ -16,6 +22,14 @@ A Swift library for simulating classic LED matrix sign displays with authentic c
 - 🎯 **Custom Fonts** - Create and use your own pixel fonts
 - 📱 **Cross-Platform** - SwiftUI, UIKit, and AppKit support
 - ⚙️ **Highly Configurable** - Matrix size, LED styling, colors, and more
+
+## Demo
+
+<p align="center">
+  <img src="docs/images/scrolling-demo.gif" alt="PixelMarquee scrolling horizontally and vertically" width="760">
+</p>
+
+The included demo app showcases static text, four-way scrolling, blinking effects, color presets, Pride flag patterns, custom fonts, and an interactive playground.
 
 ## Requirements
 
